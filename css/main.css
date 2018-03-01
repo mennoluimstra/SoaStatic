@@ -83,17 +83,17 @@ color 4: 27B9BA (Blue)
 }
 .bg-1 h3 {color: #2d2d34;}
 
-.bg-2 {
+.bg-3 {
     background: #2d2d34;
     color: #fdf9ef;
 }
-.bg-2 h3 {color: #fdf9ef;}
+.bg-3 h3 {color: #fdf9ef;}
 
-.bg-3 {
+.bg-2 {
     background: #f8a400;
     color: #2d2d34;
 }
-.bg-3 h3 {color: #2d2d34;}
+.bg-2 h3 {color: #2d2d34;}
 
 .bg-4 {
     background: #27b9ba;
