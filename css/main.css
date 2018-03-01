@@ -1,9 +1,9 @@
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
-    h1 {font-size:1.5rem;} /*1rem = 16px*/
+    h1 {font-size:15rem;} /*1rem = 16px*/
 
     .container {
-        padding: 40px 60px;
+        padding: 20px 20px;
     }
 
     .showIndicators{
@@ -13,7 +13,7 @@
    
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
   @media (min-width: 768px) {  
-    h1 {font-size:2rem;} /*1rem = 16px*/
+    h1 {font-size:15rem;} /*1rem = 16px*/
 
     .showIndicators{
         visibility: visible;
@@ -27,26 +27,12 @@
     .container {
         padding: 80px 120px;
     }
-
-    /* #banner .inner {
-        -moz-animation: reveal-banner 1s 0.25s ease-in-out;
-        -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-        -ms-animation: reveal-banner 1s 0.25s ease-in-out;
-        animation: reveal-banner 1s 0.25s ease-in-out;
-        -moz-animation-fill-mode: forwards;
-        -webkit-animation-fill-mode: forwards;
-        -ms-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        background: rgba(42, 43, 44, 0.5);
-    } */
   }
    
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {  
     h1 {font-size:17rem;} /*1rem = 16px*/
   }
-   
- 
 
 body {
     font: 400 15px/1.8 Lato, sans-serif;
@@ -59,27 +45,6 @@ h3, h4 {
     color: #111;
 }
 
-.title1{
-    font-family: Lobster, sans-serif;
-}
-
-.title2{
-    font-family: Aclonica, sans-serif;
-}
-
-.title3{
-    font-family: Nosifer, sans-serif;
-}
-
-.title4{
-    font-family: 'Emblema One', sans-serif;
-}
-
-.title5{
-    font-family: Lato, sans-serif;
-}
-
-
 .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -91,8 +56,8 @@ h3, h4 {
     border-color: #f1f1f1;
 }
 .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
+    /* -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); make all photos black and white  */
     width: 100%; /* Set width to 100% */
     margin: auto;
 }
@@ -104,11 +69,45 @@ h3, h4 {
     display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
   }
 }
+/*
+
+color 1: FDF9EF (Beige)
+color 2: 2D2D34 (Dark grey)
+color 3: F8A400 (Orange)
+color 4: 27B9BA (Blue)
+*/
+
 .bg-1 {
-    background: #2d2d30;
-    color: #bdbdbd;
+    background: #fdf9ef;
+    color: #2d2d34;
 }
-.bg-1 h3 {color: #fff;}
+.bg-1 h3 {color: #2d2d34;}
+
+.bg-2 {
+    background: #2d2d34;
+    color: #fdf9ef;
+}
+.bg-2 h3 {color: #fdf9ef;}
+
+.bg-3 {
+    background: #f8a400;
+    color: #2d2d34;
+}
+.bg-3 h3 {color: #2d2d34;}
+
+.bg-4 {
+    background: #27b9ba;
+    color: #2d2d34;
+}
+.bg-4 h3 {color: #2d2d34;}
+
+.facebookFrame {
+    padding-top: 10px;
+    border:none;
+    overflow:hidden;
+    margin-top:10px;
+    vertical-align: center;
+}
 
 .list-group-item:first-child {
     border-top-right-radius: 0;
@@ -265,4 +264,12 @@ textarea {
     margin: auto;
 }
 
+ ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
 
+ ul li { display: inline; }
