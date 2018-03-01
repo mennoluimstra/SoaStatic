@@ -10,20 +10,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_F6CofxIZ2UpN9GjQhDxwn");
-        })();
-    </script>
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -36,24 +29,22 @@
                         <a href="#home">HOME</a>
                     </li>
                     <li>
-                        <a href="#nieuws">NIEUWS</a>
+                        <a href="#info">FESTIVAL INFO</a>
                     </li>
                     <li>
                         <a href="#bands">BANDS</a>
                     </li>
                     <li>
-                        <a href="#info">FESTIVAL INFO</a>
-                    </li>
-                    <li>
                         <a href="#kaarten">KAARTEN</a>
                     </li>
                     <li>
-                        <a href="#contact">CONTACT</a>
+                        <a href="#sponsors">SPONSORS</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </a>
+                        <a href="#nieuws">NIEUWS</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -78,73 +69,84 @@
         </div>
     </div>
 
-    <!-- Container NIEUWS -->
-    <div id="nieuws" class="bg-1">
-            <div class="text-center" style="padding-top:10px">
-                <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoa.frl%2F%3Fnotif_id%3D1519493189204037%26notif_t%3Dpage_invite%26ref%3Dnotif&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                    height="500" width="360" scrolling="no" frameborder="0" allowTransparency="true" id="facebookFrame">
-                </iframe> -->
-                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoa.frl%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </div>
+    <!-- Container FESTIVAL INFO -->
+    <div id="info" class="bg-1">
+        <div class="container article-size">
+            <h3>FESTIVAL INFO</h3>
+            <p>
+                Lang gewacht en toch aanstaande: de eerste SOA. Een jaar of 10 geleden ontstond het idee om een festival met rock- en metalmuziek op te zetten. Al filosoferende (voorzover daar wegens offeringen aan Bacchus al sprake kon zijn) ontstond toen de naam SOA ofwel Surhuzum Open Air. In de daarop volgende jaren kwam SOA op bijna elk feestje wel eens ter sprake, maar dit leidde steeds niet tot concrete dingen. Wel raakten steeds meer enthousiastelingen besmet en bij steeds meer mensen begon het te kriebelen. Na een incubatietijd van 10 jaar wordt SOA nu dan eindelijk op 7 juli 2018 keiharde realiteit. 
+            </p>
+            <a href="festivalinfo.html">lees verder</a>
         </div>
-    
+    </div>
+
+
     <!-- Container BANDS -->
     <div id="bands" class="bg-2">
-        <div class="container">
-            <h3 class="text-center">BANDS</h3>
+        <div class="container article-size">
+            <h3>BANDS</h3>
             <!-- <p class="text-center">De eerste
                 <strong>bands</strong> worden snel bekend!</p> -->
         </div>
     </div>
 
-    <!-- Container FESTIVAL INFO -->
-    <div id="info" class="bg-3">
-        <div class="container text-center">
-            <h3>FESTIVAL INFO</h3>
-            <p>
-                <!-- <em>Meer info volgt snel...</em> -->
-            </p>
-            <p></p>
 
-            <h3>Hoe lang moet ik nog wachten?</h3>
-            <span id="demo"></span>
-            <br/>
-            <br/>
-            <h3>Waar is het?</h3>
-            <p>It Langfal
-                <br/> Surhuizum, Friesland</p>
-        </div>
-    </div>
 
-    <div id="googleMap" style="width:100%;height:400px"></div>
+    <!-- <div id="googleMap" style="width:100%;height:400px"></div> -->
 
     <!-- Container KAARTEN -->
-    <div id="kaarten" class="bg-4">
-        <div class="container text-center">
+    <div id="kaarten" class="bg-3">
+        <div class="container article-size">
             <h3>KAARTEN</h3>
+            <p>
+                De kaarten kosten in voorverkoop slechts €12,50 per stuk. Deze prijs is inclusief een uniek bedrukt SOA glas van SOA-bestendig polycarbonaat welke je tegen betaling bij de bar steeds weer opnieuw kunt laten vullen. Het herbruikbare glas mag je na afloop mee naar huis nemen. 
+            </p>
+        </div>
+    </div>
+
+   <!-- Container SPONSORS -->
+   <div id="sponsors" class="bg-4">
+        <div class="container article-size">
+            <h3>SPONSORS</h3>
             <p>
                 <!-- <em>Meer info volgt snel...</em> -->
             </p>
         </div>
     </div>
 
+    <!-- Container NIEUWS -->
+    <div id="nieuws" class="bg-1">
+        <div class="text-center article-size" style="padding-top:10px">
+            <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoa.frl%2F%3Fnotif_id%3D1519493189204037%26notif_t%3Dpage_invite%26ref%3Dnotif&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            height="500" width="360" scrolling="no" frameborder="0" allowTransparency="true" id="facebookFrame">
+                        </iframe> -->
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoa.frl%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId"
+                width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+    </div>
+
+
     <!-- Container (Contact Section) -->
-    <div id="contact" class="bg-1">
-        <div class="container text-center">
-            <h3 class="text-center">Contact</h3>
-            <p class="text-center">
+
+    <div id="contact" class="bg-2">
+        <div class="container article-size">
+            <h3>Contact</h3>
+            <p>
                 <ul>
                     <li>
-                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoa.frl%2F&width=51&layout=box_count&action=like&size=small&show_faces=false&share=false&height=65&appId" width="51" height="40" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </li>
-            <li>
-                <a href="mailto:info@soa.frl" style="margin: 0px; padding: 0px"><i class="far fa-envelope fa-3x"></i></a>            
-            </li>
-            <i class="fas fa-phone-square fa-3x"></i>
-            </ul>
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsoa.frl%2F&width=51&layout=box_count&action=like&size=small&show_faces=false&share=false&height=65&appId"
+                            width="51" height="40" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </li>
+                    <li>
+                        <a href="mailto:info@soa.frl" style="margin: 0px; padding: 0px">
+                            <i class="far fa-envelope fa-3x"></i>
+                        </a>
+                    </li>
+                    <i class="fas fa-phone-square fa-3x"></i>
+                </ul>
             </p>
         </div>
-   </div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center">
@@ -191,54 +193,9 @@
                 }
             });
         })
-
-        function myMap() {
-            var myLatlng = new google.maps.LatLng(53.197831995639056, 6.170625689145481);
-            var mapOptions = {
-                zoom: 14,
-                center: myLatlng
-            }
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                title: "SOA 2018"
-            });
-
-            marker.setMap(map);
-        }
-
-        var countDownDate = new Date("Jul 7, 2018 20:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-
-            // Get todays date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-            // If the count down is finished, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMFz8MbY-ZzUXf8kVv2WzZupXX-Z45Bek&callback=myMap"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMFz8MbY-ZzUXf8kVv2WzZupXX-Z45Bek&callback=myMap"></script> -->
     <script src="js/index.js"></script>
-
 </body>
 
 </html>
