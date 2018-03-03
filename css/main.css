@@ -1,67 +1,73 @@
 /* Small devices (landscape phones, 544px and up) */
-@media (max-width: 768px) {  
-    h1 {font-size:15rem;} /*1rem = 16px*/
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 15rem;
+    }
+    /*1rem = 16px*/
     .container {
         padding: 20px 20px;
     }
-
     .content-desktop {
         display: none;
-        }
-        
-        .content-mobile {
+    }
+    .content-mobile {
         display: inline;
-        }
+    }
+    .article-size {
+        max-width: 100%;
+    }
+}
 
-        .article-size {
-            max-width: 100%;
-        }
-  }
-   
-  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-  @media (min-width: 768px) {  
-    h1 {font-size:15rem;} /*1rem = 16px*/
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 
-    .showIndicators{
+@media (min-width: 768px) {
+    h1 {
+        font-size: 15rem;
+    }
+    /*1rem = 16px*/
+    .showIndicators {
         visibility: visible;
     }
-
-    
     .content-desktop {
-    display: inline;
+        display: inline;
     }
-        
     .content-mobile {
-    display: none;
+        display: none;
     }
-
     .article-size {
         max-width: 75%;
     }
-  }
-   
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) { 
-    h1 {font-size:15rem;} /*1rem = 16px*/
+}
 
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 15rem;
+    }
     .container {
         padding: 80px 120px;
     }
-  }
-   
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
-    h1 {font-size:17rem;} /*1rem = 16px*/
-  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 17rem;
+    }
+}
 
 body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
 }
-h3, h4 {
+
+h3,
+h4 {
     margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
+    letter-spacing: 10px;
     font-size: 20px;
     color: #111;
 }
@@ -73,23 +79,25 @@ h3, h4 {
     height: 80%;
     opacity: 0.7;
 }
+
 .person:hover {
     border-color: #f1f1f1;
 }
+
+/* Makes the main image fill the screen */
+
 .carousel-inner img {
     /* -webkit-filter: grayscale(90%);
     filter: grayscale(90%); make all photos black and white  */
-    width: 100%; /* Set width to 100% */
+    width: 100%;
+    /* Set width to 100% */
     margin: auto;
 }
+
 .carousel-caption h3 {
     color: #fff !important;
 }
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-  }
-}
+
 /*
 
 color 1: FDF9EF (Beige)
@@ -102,56 +110,83 @@ color 4: 27B9BA (Blue)
     background: #fdf9ef;
     color: #2d2d34;
 }
-.bg-1 h3 {color: #2d2d34;}
+
+.bg-1 h3 {
+    color: #2d2d34;
+}
 
 .bg-3 {
     background: #2d2d34;
     color: #fdf9ef;
 }
-.bg-3 h3 {color: #fdf9ef;}
+
+.bg-3 h3 {
+    color: #fdf9ef;
+}
 
 .bg-2 {
     background: #f8a400;
     color: #2d2d34;
 }
-.bg-2 h3 {color: #2d2d34;}
+
+.bg-2 h3 {
+    color: #2d2d34;
+}
 
 .bg-4 {
     background: #27b9ba;
     color: #2d2d34;
 }
-.bg-4 h3 {color: #2d2d34;}
+
+.bg-4 h3 {
+    color: #2d2d34;
+}
 
 .facebookFrame {
     padding-top: 10px;
-    border:none;
-    overflow:hidden;
-    margin-top:10px;
+    border: none;
+    overflow: hidden;
+    margin-top: 10px;
     vertical-align: center;
 }
 
+#googleMap {
+    width: 100%;
+    height: 400px;
+    bottom: 0px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* used by js to determine which divs should be resized
+to fullscreen */
+
 .fullscreen {
-    height : 200;
+    height: 200;
 }
 
 .list-group-item:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
 }
+
 .list-group-item:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
+
 .thumbnail {
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
 }
+
 .thumbnail p {
     margin-top: 15px;
     color: #555;
 }
-.bandtext{
+
+.bandtext {
     margin: 15px;
 }
 
@@ -162,29 +197,32 @@ color 4: 27B9BA (Blue)
     border-radius: 0;
     transition: .2s;
 }
-.btn:hover, .btn:focus {
+
+.btn:hover,
+.btn:focus {
     border: 1px solid #333;
     background-color: #fff;
     color: #000;
 }
-.modal-header, h4, .close {
+
+.modal-header,
+h4,
+.close {
     background-color: #333;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
 }
-.modal-header, .modal-body {
+
+.modal-header,
+.modal-body {
     padding: 40px 50px;
 }
+
 .nav-tabs li a {
     color: #777;
 }
-#googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}  
+
 .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
@@ -194,55 +232,87 @@ color 4: 27B9BA (Blue)
     letter-spacing: 4px;
     opacity: 0.9;
 }
-.navbar li a, .navbar .navbar-brand { 
+
+.navbar li a,
+.navbar .navbar-brand {
     color: #d5d5d5 !important;
 }
+
 .navbar-nav li a:hover {
     color: #fff !important;
 }
+
 .navbar-nav li.active a {
     color: #fff !important;
     background-color: #29292c !important;
 }
+
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
+
 .open .dropdown-toggle {
     color: #fff;
     background-color: #555 !important;
 }
+
 .dropdown-menu li a {
     color: #000 !important;
 }
+
 .dropdown-menu li a:hover {
     background-color: red !important;
 }
+
 footer {
     background-color: #2d2d30;
     color: #f5f5f5;
     padding: 32px;
 }
+
 footer a {
     color: #f5f5f5;
 }
+
 footer a:hover {
     color: #777;
     text-decoration: none;
-}  
+}
+
 .form-control {
     border-radius: 0;
 }
+
 textarea {
     resize: none;
 }
 
-/* Banner */
+/* This is used by the landing page to position
+social media buttons on the top right of the screen. */
+
+#banner-top {
+    cursor: default;
+    padding-right: 5px;
+    text-align: right;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin-right: 5px;
+}
+
+#banner {
+    cursor: default;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
 
 @-moz-keyframes reveal-banner {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -252,7 +322,6 @@ textarea {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -262,7 +331,6 @@ textarea {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -272,82 +340,52 @@ textarea {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
 
-#banner-top {
-    cursor: default;
-    padding-right: 5px;
-    text-align: right;
-    vertical-align: top;
-    position:absolute;
-    top:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
-    margin-right: 5px;
-}
-
-#banner {
-    cursor: default;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     text-align: center;
-    vertical-align: top;
-    width:100%;
 }
 
- ul
-{
-margin: 0;
-padding: 0;
-list-style-type: none;
-text-align: center;
+ul li {
+    display: inline;
 }
 
- ul li { display: inline; }
+/* Icon */
 
- /* Icon */
-
- .fa {
+.fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
     background: #3B5998;
     color: white;
-  }
-  
-  .fa-twitter {
+}
+
+.fa-twitter {
     background: #55ACEE;
     color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-instagram {
+}
+
+.fa-instagram {
     background: #125688;
     color: white;
-  }
-  
+}
+
+.fa-envelope {
+    background: #ff6600;
+    color: white;
+}
