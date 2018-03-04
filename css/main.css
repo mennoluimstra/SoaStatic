@@ -186,6 +186,18 @@ to fullscreen */
     color: #555;
 }
 
+.thumbnail-merch {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail-merch p {
+    margin-top: 15px;
+    color: #555;
+}
+
+
 .bandtext {
     margin: 15px;
 }
