@@ -413,3 +413,40 @@ ul li {
     background: #ff6600;
     color: white;
 }
+
+.columnBig {
+    float: left;
+    width: 33.33%;
+}
+
+.columnMedium {
+    float: left;
+    /* width: 33.33%; */
+    width: 25%;
+}
+
+
+.columnSmall h3{
+    font: 15px arial, sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    margin-left: 5px;
+    /* overflow: hidden;
+  text-overflow: ellipsis; */
+  white-space: nowrap;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    /* background-color: white; */
+    padding-right: 25px;
+    padding-bottom: 25px;
+    /* width: 250px; */
+}
